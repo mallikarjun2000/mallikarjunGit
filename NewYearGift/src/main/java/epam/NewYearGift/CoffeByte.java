@@ -3,7 +3,11 @@ package epam.NewYearGift;
 public class CoffeByte {
 	String name = "Coffe Byte";
 	String flavour = "Coffe flavour";
-	double weight=5.25;
+	int weight=5;
+	
+	CoffeByte(){
+		
+	}
 	public void flavour() {
 		// TODO Auto-generated method stub
 		System.out.print("Coffee flavour");
@@ -35,13 +39,13 @@ public class CoffeByte {
 	/**
 	 * @return the weight
 	 */
-	public double getWeight() {
+	public int getWeight() {
 		return weight;
 	}
 	/**
 	 * @param weight the weight to set
 	 */
-	public void setWeight(double weight) {
+	public void setWeight(int weight) {
 		this.weight = weight;
 	}
 	

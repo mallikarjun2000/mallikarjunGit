@@ -3,10 +3,14 @@ package epam.NewYearGift;
 public class MangoByte {
 	String name = "Mango Byte";
 	String flavour="Mango flavour";
-	double weight=2.5;
+	int weight=5;
 	public void flavour() {
 		// TODO Auto-generated method stub
 		System.out.print("Mango chocolat!e");
+	}
+	
+	MangoByte(){
+		
 	}
 	/**
 	 * @return the name
@@ -35,13 +39,13 @@ public class MangoByte {
 	/**
 	 * @return the weight
 	 */
-	public double getWeight() {
+	public int getWeight() {
 		return weight;
 	}
 	/**
 	 * @param weight the weight to set
 	 */
-	public void setWeight(double weight) {
+	public void setWeight(int weight) {
 		this.weight = weight;
 	}
 	

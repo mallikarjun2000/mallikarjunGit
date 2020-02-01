@@ -6,22 +6,17 @@ import epam.NewYearGift.MangoByte;
 
 public class Gift {
 	String name ="";
-	double totalWeight=0.0;
+	int totalWeight=0;
 	Gift(String name, int x, int y)
 	{
 		this.name = name;
-		CoffeByte c[] = new CoffeByte[x];
-		MangoByte m[] = new MangoByte[y];
-		double total = 0;
-		for(CoffeByte i : c)
-		{
-			total += i.getWeight();
-		}
-		for(MangoByte j : m)
-		{
-			total += j.getWeight();
-		}
-		this.totalWeight = total;
+		CoffeByte c = new CoffeByte();
+		MangoByte m = new MangoByte();
+		this.totalWeight = (int)c.getWeight()*(int)x + (int)m.getWeight()*(int)y ;
+	}
+	
+	public String toString(){
+		 return (name+" "+totalWeight);
 	}
 	/**
 	 * @return the name
@@ -38,13 +33,13 @@ public class Gift {
 	/**
 	 * @return the totalWeight
 	 */
-	public double getTotalWeight() {
+	public int getTotalWeight() {
 		return totalWeight;
 	}
 	/**
 	 * @param totalWeight the totalWeight to set
 	 */
-	public void setTotalWeight(double totalWeight) {
+	public void setTotalWeight(int totalWeight) {
 		this.totalWeight = totalWeight;
 	}
 	public int compareTo(Gift o) {
